@@ -1,0 +1,28 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.logo img {
+  width: 250px;
+}
+.navbar {
+  font-weight: 600;
+  font-size: 20px;
+}
+.mobile-logo {
+  width: 200px;
+  display: none;
+}
+@media (max-width: 991px) {
+  .mobile-logo {
+    display: block;
+  }
+  .logo img {
+    display: none;
+  }
+  .logo {
+    margin: 0;
+  }
+}
