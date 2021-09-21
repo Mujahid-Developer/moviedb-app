@@ -25,4 +25,7 @@
   .logo {
     margin: 0;
   }
+  .navbar-toggler {
+    display: none;
+  }
 }
