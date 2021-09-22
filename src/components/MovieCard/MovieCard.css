@@ -2,3 +2,25 @@
   display: flex;
   justify-content: center;
 }
+.movie-thumb {
+  margin: 5px;
+  width: 270px;
+  height: 460px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.movie-thumb img {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 20px;
+}
+.movie-buttom {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.movie-thumb:hover {
+  background-color: #f1f1f1;
+  transition: all 0.3s ease;
+}
