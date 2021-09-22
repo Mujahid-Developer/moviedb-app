@@ -3,14 +3,18 @@
   justify-content: center;
 }
 .movie-thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 5px;
-  width: 270px;
-  height: 460px;
+  max-width: 200px;
+  max-height: 350px;
   background-color: #ffffff;
   border-radius: 10px;
+  align-items: center;
 }
 .movie-thumb img {
-  width: 100%;
+  width: 90%;
   height: auto;
   padding: 10px;
   border-radius: 20px;
@@ -19,8 +23,14 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .movie-thumb:hover {
   background-color: #f1f1f1;
   transition: all 0.3s ease;
+}
+p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 0;
 }

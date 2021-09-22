@@ -19,7 +19,6 @@ const Trending = () => {
 
     return (
         <div>
-            <h1 className="text-center m-3">Trending</h1>
             <div className="movie-card">
                 {
                     container.map((item) => <MovieCard movie={item}></MovieCard>)

@@ -7,7 +7,7 @@ const Header = () => {
         <div>
             <Nav className='navbar' />
             {/* Slider */}
-            <div class="slide-section">
+            {/* <div class="slide-section">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -29,7 +29,7 @@ const Header = () => {
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
