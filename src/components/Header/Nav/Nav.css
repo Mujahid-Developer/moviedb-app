@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
 }
 .logo img {
   width: 250px;
@@ -15,12 +14,12 @@
   width: 200px;
   display: none;
 }
+.topbar {
+  background-color: white;
+}
 @media (max-width: 991px) {
   .mobile-logo {
     display: block;
-  }
-  .logo {
-    margin: 0;
   }
   .navbar-toggler {
     display: none;

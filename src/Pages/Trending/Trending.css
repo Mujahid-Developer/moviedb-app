@@ -2,5 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-bottom: 50px;
+}
+.headings {
+  margin-top: 80px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-weight: 700;
 }
