@@ -15,7 +15,7 @@ export default function SimpleBottomNavigation() {
 
     useEffect(() => {
         if (value === 0) {
-            history.push('/trending');
+            history.push('/');
         }
         else if (value === 1) {
             history.push('/movies');
