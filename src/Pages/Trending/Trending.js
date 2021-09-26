@@ -3,10 +3,11 @@ import React, { useEffect, useState } from 'react';
 import './Trending.css';
 import MovieCard from '../../components/MovieCard/MovieCard';
 import CustomPagination from '../../components/Pagination/CustomPagination';
+import { LinearProgress } from '@mui/material';
 
 const Trending = () => {
 
-    const [page, setPage] = useState(10)
+    const [page, setPage] = useState(1)
     const [container, setContainer] = useState([])
 
     const fetchTrending = async () => {
@@ -21,10 +22,13 @@ const Trending = () => {
 
     return (
         <div>
+
             <h1 className="text-center headings">Trendings</h1>
+
             <div className="movie-card">
                 {
-                    container.map((item) => <MovieCard movie={item}></MovieCard>)
+                    container.length === 0 ? <LinearProgress /> :
+                        container.map((item) => <MovieCard movie={item}></MovieCard>)
                 }
             </div>
             <CustomPagination setPage={setPage} />

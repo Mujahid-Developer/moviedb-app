@@ -1,5 +1,5 @@
 import SearchIcon from '@mui/icons-material/Search';
-import { Button, createMuiTheme, Tab, Tabs, TextField } from '@mui/material';
+import { Button, createMuiTheme, LinearProgress, Tab, Tabs, TextField } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import { ThemeProvider } from '@mui/system';
 import axios from 'axios';
@@ -75,7 +75,8 @@ const Search = () => {
             </ThemeProvider>
             <div className="movie-card" style={{ marginTop: '10px' }}>
                 {
-                    content && content.map((item) => <MovieCard movie={item}></MovieCard>)
+                    content.length === 0 ? <LinearProgress /> :
+                        content && content.map((item) => <MovieCard movie={item}></MovieCard>)
                 }
                 {
                     searchText &&
